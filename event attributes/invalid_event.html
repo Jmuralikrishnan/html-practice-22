@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>invalid event</title>
+</head>
+<body>
+    <form>
+        <label for="un">username</label>
+        <input type="text" id="user" placeholder="enter your name" name="un"><br>
+        <input type="submit" value="register">
+    </form>
+ 
+    <script>
+        let inputuser=document.getElementById("user");
+
+        inputuser.addEventListener("invalid",customvalidation());
+
+        function customvalidation(){
+            console.log("please enter the correct input of the user")
+        }
+
+    </script>
+</body>
+</html>

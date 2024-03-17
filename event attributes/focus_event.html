@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>onfocus-event</title>
+</head>
+<body>
+    <form >
+        <label for="schoolname">school name:</label>
+        <input type="text" name="schoolname" placeholder="enter your schoolname"  onfocus="demo(this)">
+    </form>
+    <script> 
+
+       function demo(x){
+          x.style.background="blue";
+          x.style.color="white";
+          x.style.padding="10px";
+          x.style.margin="20%";
+       }
+    </script>
+</body>
+</html>

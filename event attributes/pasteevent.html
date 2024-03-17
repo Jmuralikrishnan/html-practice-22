@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>paste_event</title>
+</head>
+<body>
+    <h2>paste event</h2>
+    <input type="text" onpaste="demo()" value="mesmorizing">
+    <p id="abc"> </p>
+    <script>
+        function demo(){
+            document.getElementById("abc").innerHTML="pasting";
+            document.getElementById("abc").style.backgroundColor="yellow";
+            document.getElementById("abc").style.color="white";
+            document.getElementById("abc").style.fontWeight="bold"
+        }
+    </script>
+    
+</body>
+</html>

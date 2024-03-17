@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>onselect event</title>
+</head>
+<body>
+
+     <form>
+        <label for="name">name</label>
+        <input type="text" value="murali" placeholder="yourname" onselect="demo()">
+        <h3 id="hello"></h3>
+    </form>
+    <script>
+        function demo(){
+            document.getElementById("hello").innerHTML="loading here";
+        }
+    </script> 
+</body>
+</html>

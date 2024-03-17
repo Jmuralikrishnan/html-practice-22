@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>heading</title>
+</head>
+<body>
+     <form>
+        <label for="name">name:</label>
+        <input type="text" placeholder="enter your name" id="fn">
+     </form>
+
+     <script>
+          let fullname=document.getElementById("fn");
+          fullname.addEventListener("blur",(e)=>{
+             console.log(e);
+             alert("welcome to onblur event in js")
+          })
+     </script>
+</body>
+</html>

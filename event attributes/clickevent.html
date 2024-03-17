@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>click event </title>
+</head>
+<body>
+    <button onclick="welcome()" id="info">submit </button>
+
+    <script>
+        function welcome(){
+            alert("welcome to the onclick event");
+            document.getElementById("info").style.backgroundColor="blue";
+            document.getElementById("info").style.color="white";
+            document.getElementById("info").style.fontSize="30px";
+            document.getElementById("info").style.padding="10px";
+            document.getElementById('info').style.textTransform="uppercase";
+        }
+    </script>
+</body>
+</html>

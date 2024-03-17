@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>search_event</title>
+</head>
+<body>
+
+    <p>search something here</p>
+
+    <input type="search"  id="myinput" onsearch="searchsome()">
+
+    <p id="info"></p>
+
+    <script>
+        function searchsome(){
+            let inputsearch=document.getElementById("myinput").value;
+            document.getElementById("info").innerHTML=`you have search something ${inputsearch}`;
+        }
+    </script>
+    
+</body>
+</html>
